@@ -1,0 +1,28 @@
+{% extends 'base.html.twig'%}
+    {% block body %}
+        {% if videos %}
+        {# <div class="container"> #}
+            {% for video in videos %}
+                <div class="row">
+
+                    <div class="col-sm-12 col-lg-4">
+                        <div class="video-name">
+                            {{video.name}}
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-lg-4">
+                        <video id="player" playsinline controls  class="video-width">
+                            <source src="{{ asset('videofiles/'~ video.file) }}" type="video/mp4" />
+                        </video>
+                    </div>
+                </div>
+            {% endfor %}
+        {# </div> #}
+        {% else %}
+            <p> Nothing videos to display</p>
+        {% endif %}
+    {% endblock %} 
+
+{# <h1>These are our latest videos</h1> #}
+
+{# here you can use the Twig variable 'videos' that gets passed from the controller #}

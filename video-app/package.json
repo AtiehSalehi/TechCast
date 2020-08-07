@@ -1,0 +1,20 @@
+{
+  "dependencies": {
+    "bootstrap": "^4.4.1",
+    "jquery": "^3.5.1",
+    "plyr": "^3.5.10",
+    "popper.js": "^1.16.1"
+  },
+  "devDependencies": {
+    "@symfony/webpack-encore": "^0.28.2",
+    "node-sass": "^4.14.1",
+    "sass-loader": "^7.0.1",
+    "webpack-notifier": "^1.6.0"
+  },
+  "name": "test",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/TechcastGmbH/video-app.git",
+  "author": "atieh <atie_salehi@yahoo.com>",
+  "license": "MIT"
+}
